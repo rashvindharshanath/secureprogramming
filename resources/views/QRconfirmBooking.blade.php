@@ -147,7 +147,7 @@
                             <td class="border">{{$booking->booking_date}}</td>
                             <td class="border">{{$booking->time}}</td>
                             <td class="border">
-                                <form action="/booking/confirm" method="POST">
+                                <form action="/bookings/confirm" method="POST">
                                     @csrf
                                     <input type="hidden" name="booking_id" value="{{$booking->id}}">
                                     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Confirm</button>
