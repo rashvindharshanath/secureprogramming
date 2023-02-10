@@ -154,7 +154,7 @@
               <h6>Latest facilities bookings</h6>
               <p class="text-sm mb-0">
                 <i class="fa fa-check text-info" aria-hidden="true"></i>
-                <span class="font-weight-bold ms-1">{{ DB::table('bookings')->count() }} done</span> this month
+                <!--<span class="font-weight-bold ms-1">{{ DB::table('bookings')->count() }} done</span> this month -->
               </p>
             </div>
 
@@ -377,10 +377,10 @@
           <div class="row">
             <div class="col-lg-6 col-7">
               <h6>Your facilities booking</h6>
-              <p class="text-sm mb-0">
+              <!-- <p class="text-sm mb-0">
                 <i class="fa fa-check text-info" aria-hidden="true"></i>
                 <span class="font-weight-bold ms-1">{{ DB::table('bookings')->where('name','=',auth()->user()->name)->count() }} done</span> this month
-              </p>
+              </p> -->
             </div>
 
           </div>
@@ -440,10 +440,10 @@
           <div class="row">
             <div class="col-lg-6 col-7">
               <h6>Your list of complaints</h6>
-              <p class="text-sm mb-0">
+              <!-- <p class="text-sm mb-0">
                 <i class="fa fa-check text-info" aria-hidden="true"></i>
                 <span class="font-weight-bold ms-1">{{ DB::table('complaints')->where('name','=',auth()->user()->name)->count() }} done</span> this month
-              </p>
+              </p> -->
             </div>
 
           </div>

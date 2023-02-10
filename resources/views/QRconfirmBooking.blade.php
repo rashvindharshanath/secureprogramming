@@ -110,8 +110,8 @@
             window.addEventListener('load', initQR);
         </script>
 
-        <h1 class="text-xl mt-5 mb-5">Scan the user's QR code</h1>
-        <div id="qr-reader" style="width:500px"></div>
+        <h3 class="text-xl mt-5 mb-5">Scan the user's QR code</h3>
+        <div id="qr-reader" style="width:1000px"></div>
         <div id="qr-reader-results" class="m-auto"></div>
         <form action="/qrconfirmbooking" method="POST">
             @csrf
