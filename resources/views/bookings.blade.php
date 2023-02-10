@@ -1,7 +1,9 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-
+<title>
+    Bookings
+  </title>
 
 @if(Auth::user()->role == 'user')
 

@@ -2,6 +2,9 @@
 
 @section('content')
 
+<title>
+    Booking confirmed successfully
+  </title>
     
     <head>
         <!-- <script type="text/javascript" src="/assets/js/instascan.min.js"></script> -->

@@ -1,6 +1,9 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
+<title>
+    Communicare Dashboard
+  </title>
 <!-- Admin view-->
 @if(Auth::user()->role == 'admin')
 
