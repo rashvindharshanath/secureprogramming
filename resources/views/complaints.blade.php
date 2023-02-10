@@ -106,7 +106,7 @@
                             <div class="form-group">
                                 <label for="complaint_text" class="form-control-label">{{ __('Complaint') }}</label>
                                 <div class="textarea">
-                                <textarea maxlength="250" placeholder="Write your complaint here..." name="complaint_text" id="complaint" cols="30" rows="7" required="true" class="textarea"></textarea>
+                                <textarea maxlength="250" placeholder="Write your complaint here..." name="complaint_text" id="complaint" cols="100" rows="7" required="true" class="textarea"></textarea>
                                 </div>
                             </div>
                         </div>

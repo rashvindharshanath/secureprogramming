@@ -2,6 +2,21 @@
 
 @section('content')
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
 <div>
     <div class="container-fluid">
         <div class="page-header min-height-100 border-radius-xl mt-4" style="background-image: url('../assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
@@ -103,13 +118,14 @@
 
 
         <div class="container-fluid py-4">
-            <div class="card">
-                     <div class="card-body pt-4 p-3 card-header pb-3 px-3 col-auto my-auto ">
+            <div class="card-body pt-4 p-3 card-header pb-3 px-3 col-auto my-auto ">
                          <h6 class="mb-0">{{ __('Available Items') }}</h6>
                      </div>
+            <div class="row">
+                     
                      @foreach ($additems as $additem)
 
-                <div class="card-body pt-4 p-3 col-auto my-auto">
+                <div class="column">
 
                 <div class="card-body col-auto my-auto">
                 <figure class="h-5 w-5 col-auto my-auto"><img src="{{ $additem->picture_link }}" alt="Shoes" class=" object-cover" width="200" 

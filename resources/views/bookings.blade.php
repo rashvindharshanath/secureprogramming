@@ -5,6 +5,21 @@
 
 @if(Auth::user()->role == 'user')
 
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
 <div>
     <div class="container-fluid">
         <div class="page-header min-height-100 border-radius-xl mt-4" style="background-image: url('../assets/img/curved-images/curved0.jpg'); background-position-y: 50%;">
@@ -69,14 +84,14 @@
             </div>
             <div class="card-body pt-4 p-3">
             <div class="flex flex-col items-center mt-4 min-h-screen overflow-auto">
-                <h1 class="text-4xl text-center font-bold text-gray-800">Book a facility</h1>
+                <h3 class="text-4xl text-center font-bold text-gray-800">Book a facility</h3>
                 <div id="item_available_list ">
-                    <h2 class=" text-2xl text-center font-bold text-gray-800 mb-10">Available Items</h2>
-                    <div class="grid grid-rows-2 grid-flow-col gap-4">
+                    <h4 class=" text-2xl text-center font-bold text-gray-800 mb-5">Available Items</h4>
+                    <div class="row">
                         @foreach ($items as $item)
-                        <div class="card w-96 bg-base-100 shadow-xl">
+                        <div class="column">
                           <!-- Edit the image properties here -->
-                            <img src="{{ $item->picture_link }}" class="w-20 h-20" alt="Shoes" />
+                            <img src="{{ $item->picture_link }}" class="w-50 h-50" alt="Shoes" style="width:100%"/>
                             <div class="card-body">
                                 <h2 class="card-title">
                                     {{ $item->item_name }}
