@@ -10,5 +10,10 @@
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
         "vite": "^4.0.0"
+    },
+    "dependencies": {
+        "daisyui": "^2.50.0",
+        "nodemon": "^2.0.20",
+        "tailwindcss": "^3.2.6"
     }
 }
