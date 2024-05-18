@@ -506,7 +506,7 @@
       new Chart(ctx, {
         type: "bar",
         data: {
-          labels: ["Jan", "Feb", "Mar", "April", "June", "July", "Aug", "Sept", "Nov"],
+          labels: ["Feb", "Mar", "April", "June", "July", "Aug", "Sept", "Oct", "Dec"],
           datasets: [{
             label: "Bookings",
             tension: 0.4,
