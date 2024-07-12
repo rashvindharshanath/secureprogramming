@@ -1,7 +1,7 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
-
+@if(Auth::check() && Auth::user()->role == 'admin')
 <style>
     * {
         box-sizing: border-box;
@@ -160,4 +160,7 @@
 </div>
 </div>
 </div>
+@else
+        <h1>You do not have access to this page.</h1>
+    @endif
 @endsection

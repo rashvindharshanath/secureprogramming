@@ -46,7 +46,7 @@ return [
     |
     */
 
-    'encrypt' => false,
+    'encrypt' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -196,6 +196,11 @@ return [
     |
     */
 
+    //To validate the user's IP address to ensure the session is only valid from the same IP.
+
     'same_site' => 'strict',
+    'ip_address' => true,
+    'user_agent' => true,
+
 
 ];

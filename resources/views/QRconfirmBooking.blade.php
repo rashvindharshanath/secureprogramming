@@ -1,6 +1,8 @@
 @extends('layouts.user_type.auth')
 
 @section('content')
+@if(Auth::check() && Auth::user()->role == 'admin')
+
 
     
     <head>
@@ -163,4 +165,8 @@
 
 
 </div>
+
+@else
+        <h1>You do not have access to this page.</h1>
+@endif
 @endsection
